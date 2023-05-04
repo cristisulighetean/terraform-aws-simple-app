@@ -4,7 +4,7 @@ variable "aws_region" {
 }
 
 variable "s3_bucket_name" {
-  default = "devops-web-app-data-tf-demo"
+  default = "devops-web-app-data-demo"
   description = "The name of the S3 bucket used for storing Terraform state files"
 }
 
