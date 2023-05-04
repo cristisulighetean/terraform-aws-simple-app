@@ -1,4 +1,4 @@
-variable "aws_region" {
+variable "region" {
   default = "eu-north-1"
   description = "The AWS region where resources will be created"
 }

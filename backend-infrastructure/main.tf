@@ -8,7 +8,7 @@ terraform {
   backend "s3" {
     bucket         = var.s3_bucket_name
     key            = var.remote_state_key
-    region         = var.aws_region
+    region         = var.region
     dynamodb_table = var.dynamodb_table_name
     encrypt        = true
   }
@@ -23,7 +23,7 @@ terraform {
 }
 
 provider "aws" {
-  region = var.aws_region
+  region = var.region
 }
 
 # Create an S3 bucket to store Terraform state files
