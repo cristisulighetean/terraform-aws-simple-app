@@ -12,3 +12,8 @@ variable "dynamodb_table_name" {
   default = "terraform-state-locking"
   description = "The name of the DynamoDB table used for state file locking"
 }
+
+variable "remote_state_key" {
+  default = "demo-project/import-bootstrap/terraform.tfstate"
+  description = "The S3 object key for the Terraform remote state file"
+}

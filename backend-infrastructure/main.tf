@@ -7,7 +7,7 @@ terraform {
 
   backend "s3" {
     bucket         = var.s3_bucket_name
-    key            = "demo-project/import-bootstrap/terraform.tfstate"
+    key            = var.remote_state_key
     region         = var.aws_region
     dynamodb_table = var.dynamodb_table_name
     encrypt        = true
