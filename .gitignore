@@ -40,6 +40,9 @@ override.tf.json
 .terraformrc
 terraform.rc
 
+# tflint files
+*.tflint.hcl
+
 # Ignore any sensitive or secret files
 *.pem
 *.key
