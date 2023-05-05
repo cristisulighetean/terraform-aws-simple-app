@@ -1,4 +1,4 @@
-# Simple web application deployment to AWS using Terraform
+# Simple web app deployment to AWS using Terraform
 
 This Terraform module deploys a simple web application on AWS using EC2 instances and an Application Load Balancer (ALB). The module is designed to be flexible and easy to use, enabling you to quickly set up a basic web application infrastructure.
 
@@ -7,8 +7,6 @@ This Terraform module deploys a simple web application on AWS using EC2 instance
 - Features
 - Requirements
 - Usage
-- Inputs
-- Outputs
 - Future Improvements
 - Gotchas
 
