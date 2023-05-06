@@ -28,11 +28,12 @@ module "web_app_1" {
   domain           = var.web_app_config.domain
   app_name         = "web-app-1"
   environment_name = "production"
-  instance_type    = "t3.small"
+  instance_type    = var.web_app_config.instance_type
   create_dns_zone  = true
   db_name          = var.db_credentials.name
   db_user          = var.db_credentials.user
   db_pass          = var.db_credentials.password
+  db_instance_type = var.db_credentials.instance_type
 }
 
 # Uncomment the following lines to create another instance of the web app
