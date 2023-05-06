@@ -27,7 +27,7 @@ module "web_app_1" {
   bucket_prefix    = var.web_app_config.bucket_prefix
   domain           = var.web_app_config.domain
   app_name         = "web-app-1"
-  environment_name = "production"
+  environment_name = var.environment
   instance_type    = var.web_app_config.instance_type
   create_dns_zone  = true
   db_name          = var.db_credentials.name

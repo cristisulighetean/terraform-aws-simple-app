@@ -28,11 +28,13 @@ variable "web_app_config" {
     bucket_prefix = string
     domain        = string
     instance_type = string
+    environment   = string
   })
   default = {
     bucket_prefix = "web-app-1-data"
     domain        = "happybee.tech"
     instance_type = "t3.small"
+    environment   = "production"
   }
 }
 
