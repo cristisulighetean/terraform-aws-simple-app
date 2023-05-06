@@ -7,7 +7,7 @@ variable "bucket" {
 
 variable "key" {
   description = "The name of the S3 key used for storing Terraform state files"
-  type = "string"
+  type = string
 }
 
 variable "dynamodb_table" {
@@ -27,19 +27,28 @@ variable "web_app_config" {
   type = object({
     bucket_prefix = string
     domain        = string
+    instance_type = string
   })
   default = {
     bucket_prefix = "web-app-1-data"
     domain        = "happybee.tech"
+    instance_type = "t3.small"
   }
 }
 
 variable "db_credentials" {
   description = "Database credentials"
   type = object({
-    name     = string
-    user     = string
-    password = string
+    name          = string
+    user          = string
+    password      = string
+    instance_type = string
   })
+  default = {
+    name          = "webapp_db"
+    user          = "foo"
+    password      = "foobarfoo"
+    instance_type = "db.t3.small"
+  }
   sensitive = true
 }

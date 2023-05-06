@@ -6,7 +6,7 @@ variable "bucket" {
 
 variable "key" {
   description = "The name of the S3 key used for storing Terraform state files"
-  type = "string"
+  type = string
 }
 
 variable "region" {
